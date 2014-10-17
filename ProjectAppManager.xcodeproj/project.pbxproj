@@ -14,6 +14,7 @@
 		FB18EBAE19F1BD5700C403D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB18EBAD19F1BD5700C403D0 /* Images.xcassets */; };
 		FB18EBB119F1BD5700C403D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */; };
 		FB18EBBD19F1BD5700C403D0 /* ProjectAppManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */; };
+		FB18EBC819F1C89A00C403D0 /* reminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBC719F1C89A00C403D0 /* reminderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FB18EBB619F1BD5700C403D0 /* ProjectAppManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectAppManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18EBBB19F1BD5700C403D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectAppManagerTests.m; sourceTree = "<group>"; };
+		FB18EBC619F1C89A00C403D0 /* reminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reminderViewController.h; sourceTree = "<group>"; };
+		FB18EBC719F1C89A00C403D0 /* reminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reminderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				FB18EBA719F1BD5700C403D0 /* ViewController.h */,
 				FB18EBA819F1BD5700C403D0 /* ViewController.m */,
 				FB18EBAA19F1BD5700C403D0 /* Main.storyboard */,
+				FB18EBC619F1C89A00C403D0 /* reminderViewController.h */,
+				FB18EBC719F1C89A00C403D0 /* reminderViewController.m */,
 				FB18EBAD19F1BD5700C403D0 /* Images.xcassets */,
 				FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */,
 				FB18EBA019F1BD5700C403D0 /* Supporting Files */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB18EBC819F1C89A00C403D0 /* reminderViewController.m in Sources */,
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
 				FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */,
 				FB18EBA319F1BD5700C403D0 /* main.m in Sources */,
