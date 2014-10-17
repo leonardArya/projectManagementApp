@@ -1,5 +1,5 @@
 //
-//  MassageModel.h
+//  ServerModel.h
 //  ProjectAppManager
 //
 //  Created by Leonard Li on 10/17/14.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MassageModel : NSObject
+@interface ServerModel : NSObject
 
 @end
