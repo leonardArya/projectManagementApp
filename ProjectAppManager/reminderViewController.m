@@ -7,8 +7,17 @@
 //
 
 #import "reminderViewController.h"
+#import "Message.h"
+#import <EventKit/EventKit.h>
 
 @interface reminderViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *reminderTitle;
+@property (weak, nonatomic) IBOutlet UITextView *reminderNoteField;
+@property (weak, nonatomic) IBOutlet UITextField *reminderYear;
+@property (weak, nonatomic) IBOutlet UITextField *reminderMonth;
+@property (weak, nonatomic) IBOutlet UITextField *reminderDay;
+@property (weak, nonatomic) IBOutlet UITextField *reminderTime;
 
 @end
 
@@ -17,9 +26,15 @@
 @implementation reminderViewController
 
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Message * reminderMessage = [Message alloc];
+    reminderMessage.type = reminder;
+    reminderMessage.title;
+    reminderMessage.note;
+    reminderMessage.startDate;
+    reminderMessage.endDate;
+
     // Do any additional setup after loading the view.
 }
 
@@ -28,14 +43,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)remindSendBtn:(id)sender {
+    
+    EKEventStore *eventStore = [[EKEventStore alloc]init];
+    EKEvent *event = [EKEvent eventWithEventStore:eventStore];
+    Message * reminderMessage = [Message alloc];
+    reminderMessage.type = reminder;
+    reminderMessage.title = self.reminderTitle.text;
+    reminderMessage.note = self.reminderNoteField.text;
+        [reminderMessage outputLog];
+    NSLog(@"HELLO");
+    
+    NSString *yearString = self.reminderYear.text;
+    NSString *monthString = self.reminderMonth.text;
+    NSString *dayString = self.reminderDay.text;
+    NSString *timeString = self.reminderTime.text;
+      NSLog(@"HELLO2");
+    NSString *dateString = [NSString stringWithFormat:@"%@,%@,%@,%@",yearString,monthString,dayString,timeString];
+      NSLog(@"%@",dateString);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+      NSLog(@"HELLO4");
+    [dateFormatter setDateFormat:@"YYYY-MM-DD hh:mm:ss"];
+    NSDate *dateFromString = [[NSDate alloc] init];
+      NSLog(@"HELLO5");
+    dateFromString = [dateFormatter dateFromString:dateString];
+      NSLog(@"HELLO6");
+    
+    
 }
-*/
 
 @end

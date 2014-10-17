@@ -23,6 +23,10 @@
 		FB18EBB119F1BD5700C403D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */; };
 		FB18EBBD19F1BD5700C403D0 /* ProjectAppManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */; };
 		FB18EBC819F1C89A00C403D0 /* reminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBC719F1C89A00C403D0 /* reminderViewController.m */; };
+		FB40C28A19F1D20400FD50DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28919F1D20400FD50DB /* Foundation.framework */; };
+		FB40C28C19F1D21100FD50DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28B19F1D21100FD50DB /* UIKit.framework */; };
+		FB40C28E19F1D21A00FD50DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */; };
+		FB40C29019F1D22300FD50DB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28F19F1D22300FD50DB /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectAppManagerTests.m; sourceTree = "<group>"; };
 		FB18EBC619F1C89A00C403D0 /* reminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reminderViewController.h; sourceTree = "<group>"; };
 		FB18EBC719F1C89A00C403D0 /* reminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reminderViewController.m; sourceTree = "<group>"; };
+		FB40C28919F1D20400FD50DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB40C28B19F1D21100FD50DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB40C28F19F1D22300FD50DB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB40C29019F1D22300FD50DB /* EventKit.framework in Frameworks */,
+				FB40C28E19F1D21A00FD50DB /* CoreGraphics.framework in Frameworks */,
+				FB40C28C19F1D21100FD50DB /* UIKit.framework in Frameworks */,
+				FB40C28A19F1D20400FD50DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +125,10 @@
 		FB18EB9419F1BD5700C403D0 = {
 			isa = PBXGroup;
 			children = (
+				FB40C28F19F1D22300FD50DB /* EventKit.framework */,
+				FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */,
+				FB40C28B19F1D21100FD50DB /* UIKit.framework */,
+				FB40C28919F1D20400FD50DB /* Foundation.framework */,
 				FB18EB9F19F1BD5700C403D0 /* ProjectAppManager */,
 				FB18EBB919F1BD5700C403D0 /* ProjectAppManagerTests */,
 				FB18EB9E19F1BD5700C403D0 /* Products */,
@@ -272,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5C43ED19F1C4DA0047283C /* ServerModel.m in Sources */,
 				FB18EBC819F1C89A00C403D0 /* reminderViewController.m in Sources */,
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
 				0D5C43D819F1BEE80047283C /* ProjectModel.m in Sources */,

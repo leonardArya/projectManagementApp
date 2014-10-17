@@ -9,11 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface reminderViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *reminderTitle;
-@property (weak, nonatomic) IBOutlet UITextView *noteField;
-@property (weak, nonatomic) IBOutlet UITextField *reminderYear;
-@property (weak, nonatomic) IBOutlet UITextField *reminderMonth;
-@property (weak, nonatomic) IBOutlet UITextField *reminderDay;
-@property (weak, nonatomic) IBOutlet UITextField *reminderTime;
 
 @end
