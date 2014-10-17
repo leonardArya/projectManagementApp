@@ -10,4 +10,14 @@
 
 @implementation UserModel
 
+static UserModel * theInstance;
+
++(UserModel*)instance{
+    if (theInstance == nil) {
+        theInstance = [UserModel alloc];
+    }
+    return theInstance;
+}
+
+
 @end

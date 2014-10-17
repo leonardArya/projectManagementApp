@@ -10,4 +10,7 @@
 
 @interface MessageModel : NSObject
 
+
++(void)sendMessageToServer:(Message *)message;
+
 @end

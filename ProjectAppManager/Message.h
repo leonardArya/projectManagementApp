@@ -11,6 +11,7 @@
 @interface Message : NSObject
 enum MessageTypes{reminder,calendar};
 
+
 @property NSInteger userID;
 @property enum MessageTypes type;
 @property NSString * title;

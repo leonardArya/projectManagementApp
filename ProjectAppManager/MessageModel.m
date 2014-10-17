@@ -7,7 +7,15 @@
 //
 
 #import "MessageModel.h"
+#import "Message.h"
+#import "ServerModel.h"
+#import "UserModel.h"
 
 @implementation MessageModel
 
++(void)sendMessageToServer:(Message *)message{
+    message.userID = UserModel.instance.userSelected.userID;
+    [ServerModel.instance.messages addObject:message];
+}
 @end
+

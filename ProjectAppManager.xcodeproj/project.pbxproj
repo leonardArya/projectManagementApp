@@ -15,6 +15,7 @@
 		0D5C43E719F1C0840047283C /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43E619F1C0840047283C /* Message.m */; };
 		0D5C43EA19F1C1470047283C /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43E919F1C1470047283C /* UserModel.m */; };
 		0D5C43ED19F1C4DA0047283C /* ServerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EC19F1C4DA0047283C /* ServerModel.m */; };
+		0D5C43F019F1D7CE0047283C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EF19F1D7CE0047283C /* User.m */; };
 		FB18EBA319F1BD5700C403D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA219F1BD5700C403D0 /* main.m */; };
 		FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA519F1BD5700C403D0 /* AppDelegate.m */; };
 		FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA819F1BD5700C403D0 /* ViewController.m */; };
@@ -56,6 +57,8 @@
 		0D5C43E919F1C1470047283C /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		0D5C43EB19F1C4DA0047283C /* ServerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerModel.h; sourceTree = "<group>"; };
 		0D5C43EC19F1C4DA0047283C /* ServerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerModel.m; sourceTree = "<group>"; };
+		0D5C43EE19F1D7CE0047283C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0D5C43EF19F1D7CE0047283C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		FB18EB9D19F1BD5700C403D0 /* ProjectAppManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAppManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18EBA119F1BD5700C403D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB18EBA219F1BD5700C403D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				0D5C43E319F1C06A0047283C /* Member.m */,
 				0D5C43E819F1C1470047283C /* UserModel.h */,
 				0D5C43E919F1C1470047283C /* UserModel.m */,
+				0D5C43EE19F1D7CE0047283C /* User.h */,
+				0D5C43EF19F1D7CE0047283C /* User.m */,
 				0D5C43DC19F1BF9A0047283C /* MessageModel.h */,
 				0D5C43DD19F1BF9A0047283C /* MessageModel.m */,
 				0D5C43E519F1C0840047283C /* Message.h */,
@@ -297,6 +302,7 @@
 				0D5C43DE19F1BF9A0047283C /* MessageModel.m in Sources */,
 				0D5C43DB19F1BF8A0047283C /* MemberModel.m in Sources */,
 				0D5C43EA19F1C1470047283C /* UserModel.m in Sources */,
+				0D5C43F019F1D7CE0047283C /* User.m in Sources */,
 				0D5C43E119F1C0580047283C /* Project.m in Sources */,
 				0D5C43E719F1C0840047283C /* Message.m in Sources */,
 				FB18EBA319F1BD5700C403D0 /* main.m in Sources */,
