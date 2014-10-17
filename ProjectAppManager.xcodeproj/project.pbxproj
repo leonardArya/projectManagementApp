@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5C43D819F1BEE80047283C /* ProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43D719F1BEE80047283C /* ProjectModel.m */; };
+		0D5C43DB19F1BF8A0047283C /* MemberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43DA19F1BF8A0047283C /* MemberModel.m */; };
+		0D5C43DE19F1BF9A0047283C /* MassageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43DD19F1BF9A0047283C /* MassageModel.m */; };
 		FB18EBA319F1BD5700C403D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA219F1BD5700C403D0 /* main.m */; };
 		FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA519F1BD5700C403D0 /* AppDelegate.m */; };
 		FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA819F1BD5700C403D0 /* ViewController.m */; };
@@ -27,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5C43D619F1BEE80047283C /* ProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectModel.h; sourceTree = "<group>"; };
+		0D5C43D719F1BEE80047283C /* ProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectModel.m; sourceTree = "<group>"; };
+		0D5C43D919F1BF8A0047283C /* MemberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberModel.h; sourceTree = "<group>"; };
+		0D5C43DA19F1BF8A0047283C /* MemberModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberModel.m; sourceTree = "<group>"; };
+		0D5C43DC19F1BF9A0047283C /* MassageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MassageModel.h; sourceTree = "<group>"; };
+		0D5C43DD19F1BF9A0047283C /* MassageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MassageModel.m; sourceTree = "<group>"; };
 		FB18EB9D19F1BD5700C403D0 /* ProjectAppManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAppManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18EBA119F1BD5700C403D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB18EBA219F1BD5700C403D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D5C43D519F1BE680047283C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D5C43D619F1BEE80047283C /* ProjectModel.h */,
+				0D5C43D719F1BEE80047283C /* ProjectModel.m */,
+				0D5C43D919F1BF8A0047283C /* MemberModel.h */,
+				0D5C43DA19F1BF8A0047283C /* MemberModel.m */,
+				0D5C43DC19F1BF9A0047283C /* MassageModel.h */,
+				0D5C43DD19F1BF9A0047283C /* MassageModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FB18EB9419F1BD5700C403D0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,7 @@
 		FB18EB9F19F1BD5700C403D0 /* ProjectAppManager */ = {
 			isa = PBXGroup;
 			children = (
+				0D5C43D519F1BE680047283C /* Model */,
 				FB18EBA419F1BD5700C403D0 /* AppDelegate.h */,
 				FB18EBA519F1BD5700C403D0 /* AppDelegate.m */,
 				FB18EBA719F1BD5700C403D0 /* ViewController.h */,
@@ -220,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
+				0D5C43D819F1BEE80047283C /* ProjectModel.m in Sources */,
 				FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */,
+				0D5C43DE19F1BF9A0047283C /* MassageModel.m in Sources */,
+				0D5C43DB19F1BF8A0047283C /* MemberModel.m in Sources */,
 				FB18EBA319F1BD5700C403D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +438,7 @@
 				FB18EBC219F1BD5700C403D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB18EBC319F1BD5700C403D0 /* Build configuration list for PBXNativeTarget "ProjectAppManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +447,7 @@
 				FB18EBC519F1BD5700C403D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
