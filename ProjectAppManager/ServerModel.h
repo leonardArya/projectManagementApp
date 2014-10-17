@@ -10,4 +10,8 @@
 
 @interface ServerModel : NSObject
 
++(ServerModel *)instance;
+
+@property NSMutableArray * messages;
+
 @end

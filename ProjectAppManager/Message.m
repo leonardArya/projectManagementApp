@@ -7,8 +7,13 @@
 //
 
 #import "Message.h"
+#import "ServerModel.h"
 
 @implementation Message
+
++(void)sendMessageToServer:(Message *)message{
+    [ServerModel.instance.messages addObject:message];
+}
 
 -(void)outputLog{
     NSLog(@"message: %ld,%u,%@,%@,%@,%@ ",(long)self.userID,self.type,self.title,self.note,self.startDate,self.endDate);

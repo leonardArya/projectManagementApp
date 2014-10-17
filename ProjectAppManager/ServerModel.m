@@ -10,4 +10,12 @@
 
 @implementation ServerModel
 
+static ServerModel * theInstance;
+
++(ServerModel*)instance{
+    if (theInstance == nil) {
+        theInstance = [ServerModel alloc];
+    }
+    return theInstance;
+}
 @end
