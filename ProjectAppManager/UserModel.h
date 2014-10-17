@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProjectModel.h"
-#import "MessageModel.h"
+#import "User.h"
 
 @interface UserModel : NSObject
 
-@property ProjectModel * projects;
-@property MessageModel * messages;
 
++(UserModel *)instance;
+
+@property User * currentUser;
+@property User * userSelected;
+
+@property NSMutableArray * allUsers;
 @end

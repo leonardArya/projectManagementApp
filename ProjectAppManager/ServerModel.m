@@ -7,6 +7,7 @@
 //
 
 #import "ServerModel.h"
+#import "Message.h"
 
 @implementation ServerModel
 
@@ -18,4 +19,16 @@ static ServerModel * theInstance;
     }
     return theInstance;
 }
+
+
+-(NSMutableArray *)getMessagesByUserID:(NSInteger)userID{
+    NSMutableArray * messages = [[NSMutableArray alloc]init];
+    for (Message * message in self.messages) {
+        if (message.userID == userID) {
+            [messages addObject:message];
+        }
+    }
+    return messages;
+}
+
 @end

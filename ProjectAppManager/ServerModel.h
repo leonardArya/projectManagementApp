@@ -13,5 +13,6 @@
 +(ServerModel *)instance;
 
 @property NSMutableArray * messages;
+-(NSMutableArray *)getMessagesByUserID:(NSInteger)userID;
 
 @end
