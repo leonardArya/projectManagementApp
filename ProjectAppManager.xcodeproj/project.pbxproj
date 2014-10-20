@@ -27,6 +27,7 @@
 		FB18EBBD19F1BD5700C403D0 /* ProjectAppManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */; };
 		FB527F0119F5C9B3005FD68E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB527F0019F5C9B3005FD68E /* LoginViewController.m */; };
 		FB527F0419F5CB86005FD68E /* ProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB527F0319F5CB86005FD68E /* ProjectListViewController.m */; };
+		FB527F0719F5CC1F005FD68E /* MemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB527F0619F5CC1F005FD68E /* MemberListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		FB527F0019F5C9B3005FD68E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FB527F0219F5CB86005FD68E /* ProjectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListViewController.h; sourceTree = "<group>"; };
 		FB527F0319F5CB86005FD68E /* ProjectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListViewController.m; sourceTree = "<group>"; };
+		FB527F0519F5CC1F005FD68E /* MemberListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListViewController.h; sourceTree = "<group>"; };
+		FB527F0619F5CC1F005FD68E /* MemberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				FB527F0019F5C9B3005FD68E /* LoginViewController.m */,
 				FB527F0219F5CB86005FD68E /* ProjectListViewController.h */,
 				FB527F0319F5CB86005FD68E /* ProjectListViewController.m */,
+				FB527F0519F5CC1F005FD68E /* MemberListViewController.h */,
+				FB527F0619F5CC1F005FD68E /* MemberListViewController.m */,
 				FB18EBA019F1BD5700C403D0 /* Supporting Files */,
 			);
 			path = ProjectAppManager;
@@ -305,6 +310,7 @@
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
 				0D5C43D819F1BEE80047283C /* ProjectManager.m in Sources */,
 				0D7BFA4619F5BD750080860F /* ReminderViewController.m in Sources */,
+				FB527F0719F5CC1F005FD68E /* MemberListViewController.m in Sources */,
 				FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */,
 				0D5C43E419F1C06A0047283C /* Member.m in Sources */,
 				0D5C43DE19F1BF9A0047283C /* MessageManager.m in Sources */,
