@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ServerModel : NSObject
+@interface ServerManager : NSObject
 
-+(ServerModel *)instance;
++(ServerManager *)instance;
 
 @property NSMutableArray * messages;
 -(NSMutableArray *)getMessagesByUserID:(NSInteger)userID;

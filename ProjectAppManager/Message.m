@@ -7,7 +7,7 @@
 //
 
 #import "Message.h"
-#import "ServerModel.h"
+#import "ServerManager.h"
 
 @implementation Message
 

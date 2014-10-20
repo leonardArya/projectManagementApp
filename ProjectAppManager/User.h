@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "ProjectModel.h"
-#import "MessageModel.h"
+#import "MessageManager.h"
 
 @interface User : NSObject
 
 @property NSInteger userID;
 
 @property ProjectModel * projects;
-@property MessageModel * messages;
+@property MessageManager * messages;
 
 @end

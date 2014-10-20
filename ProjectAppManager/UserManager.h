@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "User.h"
 
-@interface UserModel : NSObject
+@interface UserManager : NSObject
 
 
-+(UserModel *)instance;
++(UserManager *)instance;
 
 @property User * currentUser;
 @property User * userSelected;

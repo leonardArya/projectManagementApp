@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 clark Lyu. All rights reserved.
 //
 
-#import "MessageModel.h"
+#import "MessageManager.h"
 #import "Message.h"
-#import "ServerModel.h"
-#import "UserModel.h"
+#import "ServerManager.h"
+#import "UserManager.h"
 
-@implementation MessageModel
+@implementation MessageManager
 
 +(void)sendMessageToServer:(Message *)message{
     message.userID = UserModel.instance.userSelected.userID;

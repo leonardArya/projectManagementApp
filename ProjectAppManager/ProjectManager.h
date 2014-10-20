@@ -1,5 +1,5 @@
 //
-//  MassageModel.h
+//  ProjectModel.h
 //  ProjectAppManager
 //
 //  Created by Leonard Li on 10/17/14.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MessageModel : NSObject
-
-
-+(void)sendMessageToServer:(Message *)message;
+@interface ProjectManager : NSObject
 
 @end

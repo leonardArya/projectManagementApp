@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 clark Lyu. All rights reserved.
 //
 
-#import "UserModel.h"
+#import "UserManager.h"
 
-@implementation UserModel
+@implementation UserManager
 
-static UserModel * theInstance;
+static UserManager * theInstance;
 
-+(UserModel*)instance{
++(UserManager*)instance{
     if (theInstance == nil) {
-        theInstance = [UserModel alloc];
+        theInstance = [UserManager alloc];
     }
     return theInstance;
 }

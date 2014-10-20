@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 clark Lyu. All rights reserved.
 //
 
-#import "ServerModel.h"
+#import "ServerManager.h"
 #import "Message.h"
 
-@implementation ServerModel
+@implementation ServerManager
 
-static ServerModel * theInstance;
+static ServerManager * theInstance;
 
-+(ServerModel*)instance{
++(ServerManager*)instance{
     if (theInstance == nil) {
-        theInstance = [ServerModel alloc];
+        theInstance = [ServerManager alloc];
     }
     return theInstance;
 }
