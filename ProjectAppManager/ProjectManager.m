@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 clark Lyu. All rights reserved.
 //
 
-#import "ProjectModel.h"
+#import "ProjectManager.h"
 
-@implementation ProjectModel
+@implementation ProjectManager
 
 @end
