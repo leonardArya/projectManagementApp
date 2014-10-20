@@ -13,7 +13,7 @@
 
 
 -(void)outputLog{
-    NSLog(@"message: %ld,%u,%@,%@,%@,%@ ",(long)self.userID,self.type,self.title,self.note,self.startDate,self.endDate);
+    NSLog(@"message: %ld,%u,%@,%@,%@,%@ ",(long)self.userID,self.type,self.title,self.note,self.startDate.description,self.endDate);
 }
 
 

@@ -16,6 +16,7 @@ static ServerManager * theInstance;
 +(ServerManager*)instance{
     if (theInstance == nil) {
         theInstance = [ServerManager alloc];
+        theInstance.messages = [[NSMutableArray alloc] init];
     }
     return theInstance;
 }
@@ -23,6 +24,7 @@ static ServerManager * theInstance;
 
 -(NSMutableArray *)getMessagesByUserID:(NSInteger)userID{
     NSMutableArray * messages = [[NSMutableArray alloc]init];
+    
     for (Message * message in self.messages) {
         if (message.userID == userID) {
             [messages addObject:message];

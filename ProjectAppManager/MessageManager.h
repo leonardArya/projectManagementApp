@@ -11,7 +11,4 @@
 
 @interface MessageManager : NSObject
 
-
-+(void)sendMessageToServer:(Message *)message;
-
 @end

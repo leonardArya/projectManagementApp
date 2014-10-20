@@ -9,6 +9,7 @@
 #import "reminderViewController.h"
 #import "Message.h"
 #import <EventKit/EventKit.h>
+#import "MessageAPI.h"
 
 @interface reminderViewController ()
 
@@ -28,13 +29,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Message * reminderMessage = [Message alloc];
-    reminderMessage.type = reminder;
-    reminderMessage.title;
-    reminderMessage.note;
-    reminderMessage.startDate;
-    reminderMessage.endDate;
-
     // Do any additional setup after loading the view.
 }
 
@@ -44,33 +38,38 @@
 }
 
 - (IBAction)remindSendBtn:(id)sender {
-    
-    EKEventStore *eventStore = [[EKEventStore alloc]init];
-    EKEvent *event = [EKEvent eventWithEventStore:eventStore];
     Message * reminderMessage = [Message alloc];
+    
     reminderMessage.type = reminder;
     reminderMessage.title = self.reminderTitle.text;
     reminderMessage.note = self.reminderNoteField.text;
-        [reminderMessage outputLog];
-    NSLog(@"HELLO");
     
     NSString *yearString = self.reminderYear.text;
     NSString *monthString = self.reminderMonth.text;
     NSString *dayString = self.reminderDay.text;
     NSString *timeString = self.reminderTime.text;
-      NSLog(@"HELLO2");
-    NSString *dateString = [NSString stringWithFormat:@"%@,%@,%@,%@",yearString,monthString,dayString,timeString];
-      NSLog(@"%@",dateString);
+    NSString *dateString = [NSString stringWithFormat:@"%@-%@-%@ %@",yearString,monthString,dayString,timeString];
+    NSLog(@"%@", dateString);
+    
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-      NSLog(@"HELLO4");
-    [dateFormatter setDateFormat:@"YYYY-MM-DD hh:mm:ss"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSDate *dateFromString = [[NSDate alloc] init];
-      NSLog(@"HELLO5");
     dateFromString = [dateFormatter dateFromString:dateString];
-      NSLog(@"HELLO6");
     
+    reminderMessage.startDate = dateFromString;
+    [MessageAPI sendMessageToServer:reminderMessage];
     
+    [reminderMessage outputLog];
+    
+}
+
+-(IBAction)cancelButtonOnClick:(id)sender{
+    NSLog(@"%@",@"cancel test");
+    NSMutableArray * messages = [MessageAPI getMessageFromServer];
+    for (Message * msg in messages) {
+        NSLog(@"%@",msg.title);
+    }
 }
 
 @end

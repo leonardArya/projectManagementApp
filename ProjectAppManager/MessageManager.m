@@ -13,9 +13,5 @@
 
 @implementation MessageManager
 
-+(void)sendMessageToServer:(Message *)message{
-    message.userID = UserManager.instance.userSelected.userID;
-    [ServerManager.instance.messages addObject:message];
-}
 @end
 

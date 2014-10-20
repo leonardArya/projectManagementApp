@@ -16,6 +16,7 @@
 		0D5C43EA19F1C1470047283C /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43E919F1C1470047283C /* UserManager.m */; };
 		0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EC19F1C4DA0047283C /* ServerManager.m */; };
 		0D5C43F019F1D7CE0047283C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EF19F1D7CE0047283C /* User.m */; };
+		0DFD2C8419F5917B0009BA2E /* MessageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD2C8319F5917B0009BA2E /* MessageAPI.m */; };
 		FB18EBA319F1BD5700C403D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA219F1BD5700C403D0 /* main.m */; };
 		FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA519F1BD5700C403D0 /* AppDelegate.m */; };
 		FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA819F1BD5700C403D0 /* ViewController.m */; };
@@ -59,6 +60,8 @@
 		0D5C43EC19F1C4DA0047283C /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
 		0D5C43EE19F1D7CE0047283C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0D5C43EF19F1D7CE0047283C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0DFD2C8219F5917B0009BA2E /* MessageAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAPI.h; sourceTree = "<group>"; };
+		0DFD2C8319F5917B0009BA2E /* MessageAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAPI.m; sourceTree = "<group>"; };
 		FB18EB9D19F1BD5700C403D0 /* ProjectAppManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAppManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18EBA119F1BD5700C403D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB18EBA219F1BD5700C403D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +108,16 @@
 		0D5C43D519F1BE680047283C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D5C43D619F1BEE80047283C /* ProjectManager.h */,
+				0D5C43D719F1BEE80047283C /* ProjectManager.m */,
+				0D5C43D919F1BF8A0047283C /* MemberManager.h */,
+				0D5C43DA19F1BF8A0047283C /* MemberManager.m */,
+				0D5C43E819F1C1470047283C /* UserManager.h */,
+				0D5C43E919F1C1470047283C /* UserManager.m */,
+				0D5C43DC19F1BF9A0047283C /* MessageManager.h */,
+				0D5C43DD19F1BF9A0047283C /* MessageManager.m */,
+				0D5C43EB19F1C4DA0047283C /* ServerManager.h */,
+				0D5C43EC19F1C4DA0047283C /* ServerManager.m */,
 				0D5C43E219F1C06A0047283C /* Member.h */,
 				0D5C43E319F1C06A0047283C /* Member.m */,
 				0D5C43EE19F1D7CE0047283C /* User.h */,
@@ -117,19 +130,11 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		0DF97A2E19F57CCF00ED0678 /* API */ = {
+		0DFD2C7D19F5857C0009BA2E /* API */ = {
 			isa = PBXGroup;
 			children = (
-				0D5C43D619F1BEE80047283C /* ProjectManager.h */,
-				0D5C43D719F1BEE80047283C /* ProjectManager.m */,
-				0D5C43D919F1BF8A0047283C /* MemberManager.h */,
-				0D5C43DA19F1BF8A0047283C /* MemberManager.m */,
-				0D5C43E819F1C1470047283C /* UserManager.h */,
-				0D5C43E919F1C1470047283C /* UserManager.m */,
-				0D5C43DC19F1BF9A0047283C /* MessageManager.h */,
-				0D5C43DD19F1BF9A0047283C /* MessageManager.m */,
-				0D5C43EB19F1C4DA0047283C /* ServerManager.h */,
-				0D5C43EC19F1C4DA0047283C /* ServerManager.m */,
+				0DFD2C8219F5917B0009BA2E /* MessageAPI.h */,
+				0DFD2C8319F5917B0009BA2E /* MessageAPI.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -159,7 +164,7 @@
 		FB18EB9F19F1BD5700C403D0 /* ProjectAppManager */ = {
 			isa = PBXGroup;
 			children = (
-				0DF97A2E19F57CCF00ED0678 /* API */,
+				0DFD2C7D19F5857C0009BA2E /* API */,
 				0D5C43D519F1BE680047283C /* Model */,
 				FB18EBA419F1BD5700C403D0 /* AppDelegate.h */,
 				FB18EBA519F1BD5700C403D0 /* AppDelegate.m */,
@@ -301,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFD2C8419F5917B0009BA2E /* MessageAPI.m in Sources */,
 				0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */,
 				FB18EBC819F1C89A00C403D0 /* reminderViewController.m in Sources */,
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
