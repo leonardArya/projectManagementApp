@@ -25,10 +25,7 @@
 		FB18EBAE19F1BD5700C403D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB18EBAD19F1BD5700C403D0 /* Images.xcassets */; };
 		FB18EBB119F1BD5700C403D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */; };
 		FB18EBBD19F1BD5700C403D0 /* ProjectAppManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */; };
-		FB40C28A19F1D20400FD50DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28919F1D20400FD50DB /* Foundation.framework */; };
-		FB40C28C19F1D21100FD50DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28B19F1D21100FD50DB /* UIKit.framework */; };
-		FB40C28E19F1D21A00FD50DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */; };
-		FB40C29019F1D22300FD50DB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28F19F1D22300FD50DB /* EventKit.framework */; };
+		FB527F0119F5C9B3005FD68E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB527F0019F5C9B3005FD68E /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,10 +74,8 @@
 		FB18EBB619F1BD5700C403D0 /* ProjectAppManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectAppManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18EBBB19F1BD5700C403D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectAppManagerTests.m; sourceTree = "<group>"; };
-		FB40C28919F1D20400FD50DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FB40C28B19F1D21100FD50DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FB40C28F19F1D22300FD50DB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		FB527EFF19F5C9B3005FD68E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FB527F0019F5C9B3005FD68E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB40C29019F1D22300FD50DB /* EventKit.framework in Frameworks */,
-				FB40C28E19F1D21A00FD50DB /* CoreGraphics.framework in Frameworks */,
-				FB40C28C19F1D21100FD50DB /* UIKit.framework in Frameworks */,
-				FB40C28A19F1D20400FD50DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +133,6 @@
 		FB18EB9419F1BD5700C403D0 = {
 			isa = PBXGroup;
 			children = (
-				FB40C28F19F1D22300FD50DB /* EventKit.framework */,
-				FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */,
-				FB40C28B19F1D21100FD50DB /* UIKit.framework */,
-				FB40C28919F1D20400FD50DB /* Foundation.framework */,
 				FB18EB9F19F1BD5700C403D0 /* ProjectAppManager */,
 				FB18EBB919F1BD5700C403D0 /* ProjectAppManagerTests */,
 				FB18EB9E19F1BD5700C403D0 /* Products */,
@@ -175,6 +162,8 @@
 				0D7BFA4419F5BD750080860F /* ReminderViewController.h */,
 				0D7BFA4519F5BD750080860F /* ReminderViewController.m */,
 				FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */,
+				FB527EFF19F5C9B3005FD68E /* LoginViewController.h */,
+				FB527F0019F5C9B3005FD68E /* LoginViewController.m */,
 				FB18EBA019F1BD5700C403D0 /* Supporting Files */,
 			);
 			path = ProjectAppManager;
@@ -320,6 +309,7 @@
 				0D5C43E119F1C0580047283C /* Project.m in Sources */,
 				0D5C43E719F1C0840047283C /* Message.m in Sources */,
 				FB18EBA319F1BD5700C403D0 /* main.m in Sources */,
+				FB527F0119F5C9B3005FD68E /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
