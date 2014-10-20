@@ -16,6 +16,7 @@
 		0D5C43EA19F1C1470047283C /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43E919F1C1470047283C /* UserManager.m */; };
 		0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EC19F1C4DA0047283C /* ServerManager.m */; };
 		0D5C43F019F1D7CE0047283C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EF19F1D7CE0047283C /* User.m */; };
+		0D7BFA4619F5BD750080860F /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFA4519F5BD750080860F /* ReminderViewController.m */; };
 		0DFD2C8419F5917B0009BA2E /* MessageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD2C8319F5917B0009BA2E /* MessageAPI.m */; };
 		FB18EBA319F1BD5700C403D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA219F1BD5700C403D0 /* main.m */; };
 		FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA519F1BD5700C403D0 /* AppDelegate.m */; };
@@ -59,6 +60,8 @@
 		0D5C43EC19F1C4DA0047283C /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
 		0D5C43EE19F1D7CE0047283C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0D5C43EF19F1D7CE0047283C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0D7BFA4419F5BD750080860F /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		0D7BFA4519F5BD750080860F /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
 		0DFD2C8219F5917B0009BA2E /* MessageAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAPI.h; sourceTree = "<group>"; };
 		0DFD2C8319F5917B0009BA2E /* MessageAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAPI.m; sourceTree = "<group>"; };
 		FB18EB9D19F1BD5700C403D0 /* ProjectAppManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAppManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +172,8 @@
 				FB18EBA819F1BD5700C403D0 /* ViewController.m */,
 				FB18EBAA19F1BD5700C403D0 /* Main.storyboard */,
 				FB18EBAD19F1BD5700C403D0 /* Images.xcassets */,
+				0D7BFA4419F5BD750080860F /* ReminderViewController.h */,
+				0D7BFA4519F5BD750080860F /* ReminderViewController.m */,
 				FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */,
 				FB18EBA019F1BD5700C403D0 /* Supporting Files */,
 			);
@@ -305,6 +310,7 @@
 				0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */,
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
 				0D5C43D819F1BEE80047283C /* ProjectManager.m in Sources */,
+				0D7BFA4619F5BD750080860F /* ReminderViewController.m in Sources */,
 				FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */,
 				0D5C43E419F1C06A0047283C /* Member.m in Sources */,
 				0D5C43DE19F1BF9A0047283C /* MessageManager.m in Sources */,
