@@ -24,7 +24,6 @@
 		FB18EBAE19F1BD5700C403D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB18EBAD19F1BD5700C403D0 /* Images.xcassets */; };
 		FB18EBB119F1BD5700C403D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */; };
 		FB18EBBD19F1BD5700C403D0 /* ProjectAppManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */; };
-		FB18EBC819F1C89A00C403D0 /* reminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBC719F1C89A00C403D0 /* reminderViewController.m */; };
 		FB40C28A19F1D20400FD50DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28919F1D20400FD50DB /* Foundation.framework */; };
 		FB40C28C19F1D21100FD50DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28B19F1D21100FD50DB /* UIKit.framework */; };
 		FB40C28E19F1D21A00FD50DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */; };
@@ -75,8 +74,6 @@
 		FB18EBB619F1BD5700C403D0 /* ProjectAppManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectAppManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18EBBB19F1BD5700C403D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB18EBBC19F1BD5700C403D0 /* ProjectAppManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectAppManagerTests.m; sourceTree = "<group>"; };
-		FB18EBC619F1C89A00C403D0 /* reminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reminderViewController.h; sourceTree = "<group>"; };
-		FB18EBC719F1C89A00C403D0 /* reminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reminderViewController.m; sourceTree = "<group>"; };
 		FB40C28919F1D20400FD50DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB40C28B19F1D21100FD50DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB40C28D19F1D21A00FD50DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -171,8 +168,6 @@
 				FB18EBA719F1BD5700C403D0 /* ViewController.h */,
 				FB18EBA819F1BD5700C403D0 /* ViewController.m */,
 				FB18EBAA19F1BD5700C403D0 /* Main.storyboard */,
-				FB18EBC619F1C89A00C403D0 /* reminderViewController.h */,
-				FB18EBC719F1C89A00C403D0 /* reminderViewController.m */,
 				FB18EBAD19F1BD5700C403D0 /* Images.xcassets */,
 				FB18EBAF19F1BD5700C403D0 /* LaunchScreen.xib */,
 				FB18EBA019F1BD5700C403D0 /* Supporting Files */,
@@ -308,7 +303,6 @@
 			files = (
 				0DFD2C8419F5917B0009BA2E /* MessageAPI.m in Sources */,
 				0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */,
-				FB18EBC819F1C89A00C403D0 /* reminderViewController.m in Sources */,
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
 				0D5C43D819F1BEE80047283C /* ProjectManager.m in Sources */,
 				FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */,
