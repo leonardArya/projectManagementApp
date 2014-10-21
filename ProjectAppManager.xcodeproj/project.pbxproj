@@ -17,6 +17,7 @@
 		0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EC19F1C4DA0047283C /* ServerManager.m */; };
 		0D5C43F019F1D7CE0047283C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EF19F1D7CE0047283C /* User.m */; };
 		0D7BFA4619F5BD750080860F /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFA4519F5BD750080860F /* ReminderViewController.m */; };
+		0DA0E5C219F713090058EDC1 /* UserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0E5C119F713090058EDC1 /* UserAPI.m */; };
 		0DFD2C8419F5917B0009BA2E /* MessageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD2C8319F5917B0009BA2E /* MessageAPI.m */; };
 		FB18EBA319F1BD5700C403D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA219F1BD5700C403D0 /* main.m */; };
 		FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA519F1BD5700C403D0 /* AppDelegate.m */; };
@@ -62,6 +63,8 @@
 		0D5C43EF19F1D7CE0047283C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		0D7BFA4419F5BD750080860F /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
 		0D7BFA4519F5BD750080860F /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		0DA0E5C019F713090058EDC1 /* UserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAPI.h; sourceTree = "<group>"; };
+		0DA0E5C119F713090058EDC1 /* UserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAPI.m; sourceTree = "<group>"; };
 		0DFD2C8219F5917B0009BA2E /* MessageAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAPI.h; sourceTree = "<group>"; };
 		0DFD2C8319F5917B0009BA2E /* MessageAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAPI.m; sourceTree = "<group>"; };
 		FB18EB9D19F1BD5700C403D0 /* ProjectAppManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAppManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +136,8 @@
 		0DFD2C7D19F5857C0009BA2E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0DA0E5C019F713090058EDC1 /* UserAPI.h */,
+				0DA0E5C119F713090058EDC1 /* UserAPI.m */,
 				0DFD2C8219F5917B0009BA2E /* MessageAPI.h */,
 				0DFD2C8319F5917B0009BA2E /* MessageAPI.m */,
 			);
@@ -318,6 +323,7 @@
 				FB527F0719F5CC1F005FD68E /* MemberListViewController.m in Sources */,
 				FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */,
 				0D5C43E419F1C06A0047283C /* Member.m in Sources */,
+				0DA0E5C219F713090058EDC1 /* UserAPI.m in Sources */,
 				0D5C43DE19F1BF9A0047283C /* MessageManager.m in Sources */,
 				FB527F0419F5CB86005FD68E /* ProjectListViewController.m in Sources */,
 				0D5C43DB19F1BF8A0047283C /* MemberManager.m in Sources */,

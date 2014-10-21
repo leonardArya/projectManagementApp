@@ -15,14 +15,14 @@
 @implementation MessageAPI
 
 +(void)sendMessageToServer:(Message *)message{
-    message.userID = UserManager.instance.userSelected.userID;
+    message.userID = [UserManager sharedInstance].userSelected.userID;
     [ServerManager.instance.messages addObject:message];
     
 //    NSLog(@"total message in server:%lu",[ServerManager.instance.messages count]);
 }
 
 +(NSMutableArray*)getMessageFromServer{
-    NSInteger userID= UserManager.instance.currentUser.userID;
+    NSInteger userID= [UserManager sharedInstance].currentUser.userID;
     return [ServerManager.instance getMessagesByUserID:userID];
 }
 @end
