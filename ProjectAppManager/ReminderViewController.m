@@ -11,14 +11,13 @@
 #import <EventKit/EventKit.h>
 #import "MessageAPI.h"
 
-@interface ReminderViewController ()
+@interface ReminderViewController()
 
 @property (weak, nonatomic) IBOutlet UITextField *reminderTitle;
 @property (weak, nonatomic) IBOutlet UITextView *reminderNoteField;
-@property (weak, nonatomic) IBOutlet UITextField *reminderYear;
-@property (weak, nonatomic) IBOutlet UITextField *reminderMonth;
-@property (weak, nonatomic) IBOutlet UITextField *reminderDay;
-@property (weak, nonatomic) IBOutlet UITextField *reminderTime;
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePk;
+@property (weak, nonatomic) IBOutlet UILabel *theDateLabel;
 
 @end
 
@@ -37,27 +36,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)remindSendBtn:(id)sender {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    NSLog(@"helo");
+    self.theDateLabel.text = [dateFormatter stringFromDate:self.datePk.date];
+    NSLog(@"%@",self.theDateLabel.text);
     Message * reminderMessage = [Message alloc];
     
     reminderMessage.type = reminder;
     reminderMessage.title = self.reminderTitle.text;
     reminderMessage.note = self.reminderNoteField.text;
-    
-    NSString *yearString = self.reminderYear.text;
-    NSString *monthString = self.reminderMonth.text;
-    NSString *dayString = self.reminderDay.text;
-    NSString *timeString = self.reminderTime.text;
-    NSString *dateString = [NSString stringWithFormat:@"%@-%@-%@ %@",yearString,monthString,dayString,timeString];
-    NSLog(@"%@", dateString);
-    
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    NSDate *dateFromString = [[NSDate alloc] init];
-    dateFromString = [dateFormatter dateFromString:dateString];
-    
-    reminderMessage.startDate = dateFromString;
+    reminderMessage.startDate = self.datePk.date;
     [MessageAPI sendMessageToServer:reminderMessage];
     
     [reminderMessage outputLog];
@@ -71,5 +64,15 @@
         NSLog(@"%@",msg.title);
     }
 }
+- (IBAction)datePickerValueChanged:(id)sender {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    self.theDateLabel.text = [dateFormatter stringFromDate:self.datePk.date];
+   
+}
+
+
 
 @end
