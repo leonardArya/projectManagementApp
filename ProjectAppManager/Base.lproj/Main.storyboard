@@ -81,7 +81,7 @@
         <!--Reminder View Controller-->
         <scene sceneID="fjz-Av-mFj">
             <objects>
-                <viewController storyboardIdentifier="reminder" id="EHt-ea-UpU" customClass="reminderViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reminder" id="EHt-ea-UpU" customClass="ReminderViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUC-i5-xDh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
