@@ -7,6 +7,7 @@
 //
 
 #import "UserManager.h"
+#import <CoreData/CoreData.h>
 
 @implementation UserManager
 
@@ -42,5 +43,6 @@ static UserManager * instance;
     }
     return nil;
 }
+
 
 @end
