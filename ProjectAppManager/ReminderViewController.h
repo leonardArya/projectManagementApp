@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReminderViewController : UIViewController
+@interface ReminderViewController : UIViewController<UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *reminderTitle;
+@property (weak, nonatomic) IBOutlet UITextView *reminderNoteField;
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePk;
+@property (weak, nonatomic) IBOutlet UILabel *theDateLabel;
 
 @end

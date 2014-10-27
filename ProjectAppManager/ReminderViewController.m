@@ -11,13 +11,8 @@
 #import <EventKit/EventKit.h>
 #import "MessageAPI.h"
 
-@interface ReminderViewController()
+@interface ReminderViewController()<UITextViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *reminderTitle;
-@property (weak, nonatomic) IBOutlet UITextView *reminderNoteField;
-
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePk;
-@property (weak, nonatomic) IBOutlet UILabel *theDateLabel;
 
 @end
 
@@ -25,16 +20,40 @@
 
 @implementation ReminderViewController
 
-
+@synthesize reminderNoteField, reminderTitle, datePk, theDateLabel;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    reminderNoteField.text = @"notes...";
+    reminderNoteField.textColor = [UIColor lightGrayColor];
+    self.reminderNoteField.delegate = self;
     // Do any additional setup after loading the view.
+    
+  
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    NSLog(@"test");
+    reminderNoteField.text = @"";
+    reminderNoteField.textColor = [UIColor blackColor];
+}
+
+-(void) textViewDidChange:(UITextView *)textView
+{
+    
+    if(reminderNoteField.text.length == 0){
+        reminderNoteField.textColor = [UIColor lightGrayColor];
+        reminderNoteField.text = @"notes...";
+       
+    }
+}
+
 
 
 - (IBAction)remindSendBtn:(id)sender {
