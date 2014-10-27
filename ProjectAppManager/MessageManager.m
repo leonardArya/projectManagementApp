@@ -13,5 +13,13 @@
 
 @implementation MessageManager
 
+
++(void)handleMessage:(Message*)message{
+    if(message.type==reminder){
+        
+    }else{
+        
+    }
+}
 @end
 

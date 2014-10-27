@@ -10,7 +10,7 @@
 
 @interface ServerManager : NSObject
 
-+(ServerManager *)instance;
++(ServerManager *)sharedInstance;
 
 @property NSMutableArray * messages;
 -(NSMutableArray *)getMessagesByUserID:(NSInteger)userID;

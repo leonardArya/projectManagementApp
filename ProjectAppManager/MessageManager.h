@@ -11,4 +11,5 @@
 
 @interface MessageManager : NSObject
 
++(void)handleMessage:(Message*)message;
 @end

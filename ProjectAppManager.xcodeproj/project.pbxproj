@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2920C919FEC47400D104EF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2920C819FEC47400D104EF /* CoreData.framework */; };
+		0D29210119FEC7FC00D104EF /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D2920FF19FEC7FC00D104EF /* CoreDataModel.xcdatamodeld */; };
+		0D29210419FECCE100D104EF /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D29210319FECCE100D104EF /* CoreDataManager.m */; };
 		0D5C43D819F1BEE80047283C /* ProjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43D719F1BEE80047283C /* ProjectManager.m */; };
 		0D5C43DB19F1BF8A0047283C /* MemberManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43DA19F1BF8A0047283C /* MemberManager.m */; };
 		0D5C43DE19F1BF9A0047283C /* MessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43DD19F1BF9A0047283C /* MessageManager.m */; };
@@ -17,6 +20,7 @@
 		0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EC19F1C4DA0047283C /* ServerManager.m */; };
 		0D5C43F019F1D7CE0047283C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EF19F1D7CE0047283C /* User.m */; };
 		0D7BFA4619F5BD750080860F /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFA4519F5BD750080860F /* ReminderViewController.m */; };
+		0DA0E5C219F713090058EDC1 /* UserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0E5C119F713090058EDC1 /* UserAPI.m */; };
 		0DFD2C8419F5917B0009BA2E /* MessageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD2C8319F5917B0009BA2E /* MessageAPI.m */; };
 		FB18EBA319F1BD5700C403D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA219F1BD5700C403D0 /* main.m */; };
 		FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB18EBA519F1BD5700C403D0 /* AppDelegate.m */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2920C819FEC47400D104EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0D29210019FEC7FC00D104EF /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		0D29210219FECCE100D104EF /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		0D29210319FECCE100D104EF /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		0D5C43D619F1BEE80047283C /* ProjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectManager.h; sourceTree = "<group>"; };
 		0D5C43D719F1BEE80047283C /* ProjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectManager.m; sourceTree = "<group>"; };
 		0D5C43D919F1BF8A0047283C /* MemberManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberManager.h; sourceTree = "<group>"; };
@@ -62,6 +70,8 @@
 		0D5C43EF19F1D7CE0047283C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		0D7BFA4419F5BD750080860F /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
 		0D7BFA4519F5BD750080860F /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		0DA0E5C019F713090058EDC1 /* UserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAPI.h; sourceTree = "<group>"; };
+		0DA0E5C119F713090058EDC1 /* UserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAPI.m; sourceTree = "<group>"; };
 		0DFD2C8219F5917B0009BA2E /* MessageAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAPI.h; sourceTree = "<group>"; };
 		0DFD2C8319F5917B0009BA2E /* MessageAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAPI.m; sourceTree = "<group>"; };
 		FB18EB9D19F1BD5700C403D0 /* ProjectAppManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAppManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2920C919FEC47400D104EF /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +119,8 @@
 		0D5C43D519F1BE680047283C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D29210219FECCE100D104EF /* CoreDataManager.h */,
+				0D29210319FECCE100D104EF /* CoreDataManager.m */,
 				0D5C43D619F1BEE80047283C /* ProjectManager.h */,
 				0D5C43D719F1BEE80047283C /* ProjectManager.m */,
 				0D5C43D919F1BF8A0047283C /* MemberManager.h */,
@@ -133,6 +146,8 @@
 		0DFD2C7D19F5857C0009BA2E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0DA0E5C019F713090058EDC1 /* UserAPI.h */,
+				0DA0E5C119F713090058EDC1 /* UserAPI.m */,
 				0DFD2C8219F5917B0009BA2E /* MessageAPI.h */,
 				0DFD2C8319F5917B0009BA2E /* MessageAPI.m */,
 			);
@@ -142,6 +157,7 @@
 		FB18EB9419F1BD5700C403D0 = {
 			isa = PBXGroup;
 			children = (
+				0D2920C819FEC47400D104EF /* CoreData.framework */,
 				FB18EB9F19F1BD5700C403D0 /* ProjectAppManager */,
 				FB18EBB919F1BD5700C403D0 /* ProjectAppManagerTests */,
 				FB18EB9E19F1BD5700C403D0 /* Products */,
@@ -160,6 +176,7 @@
 		FB18EB9F19F1BD5700C403D0 /* ProjectAppManager */ = {
 			isa = PBXGroup;
 			children = (
+				0D2920FF19FEC7FC00D104EF /* CoreDataModel.xcdatamodeld */,
 				0DFD2C7D19F5857C0009BA2E /* API */,
 				0D5C43D519F1BE680047283C /* Model */,
 				FB18EBA419F1BD5700C403D0 /* AppDelegate.h */,
@@ -315,14 +332,17 @@
 				FB18EBA919F1BD5700C403D0 /* ViewController.m in Sources */,
 				0D5C43D819F1BEE80047283C /* ProjectManager.m in Sources */,
 				0D7BFA4619F5BD750080860F /* ReminderViewController.m in Sources */,
+				0D29210119FEC7FC00D104EF /* CoreDataModel.xcdatamodeld in Sources */,
 				FB527F0719F5CC1F005FD68E /* MemberListViewController.m in Sources */,
 				FB18EBA619F1BD5700C403D0 /* AppDelegate.m in Sources */,
 				0D5C43E419F1C06A0047283C /* Member.m in Sources */,
+				0DA0E5C219F713090058EDC1 /* UserAPI.m in Sources */,
 				0D5C43DE19F1BF9A0047283C /* MessageManager.m in Sources */,
 				FB527F0419F5CB86005FD68E /* ProjectListViewController.m in Sources */,
 				0D5C43DB19F1BF8A0047283C /* MemberManager.m in Sources */,
 				0D5C43EA19F1C1470047283C /* UserManager.m in Sources */,
 				0D5C43F019F1D7CE0047283C /* User.m in Sources */,
+				0D29210419FECCE100D104EF /* CoreDataManager.m in Sources */,
 				0D5C43E119F1C0580047283C /* Project.m in Sources */,
 				0D5C43E719F1C0840047283C /* Message.m in Sources */,
 				FB18EBA319F1BD5700C403D0 /* main.m in Sources */,
@@ -530,6 +550,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D2920FF19FEC7FC00D104EF /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D29210019FEC7FC00D104EF /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 0D29210019FEC7FC00D104EF /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FB18EB9519F1BD5700C403D0 /* Project object */;
 }

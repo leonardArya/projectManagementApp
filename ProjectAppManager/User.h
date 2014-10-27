@@ -13,6 +13,8 @@
 @interface User : NSObject
 
 @property NSInteger userID;
+@property NSString * userName;
+@property NSString * password;
 
 @property ProjectManager * projects;
 @property MessageManager * messages;

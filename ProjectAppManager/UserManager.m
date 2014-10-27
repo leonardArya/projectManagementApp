@@ -7,16 +7,41 @@
 //
 
 #import "UserManager.h"
+#import <CoreData/CoreData.h>
 
 @implementation UserManager
 
-static UserManager * theInstance;
+static UserManager * instance;
 
-+(UserManager*)instance{
-    if (theInstance == nil) {
-        theInstance = [UserManager alloc];
++(UserManager*)sharedInstance{
+    if (instance == nil) {
+        instance = [[UserManager alloc]init];
     }
-    return theInstance;
+    return instance;
+}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.allUsers = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+
+-(User *)getUserByID:(NSInteger)userID{
+    for (User * user in self.allUsers) {
+        if (user.userID == userID) return user;
+    }
+    return nil;
+}
+
+-(User *)userLogin:(NSString*)userName password:(NSString*)password{
+
+    for (User * user in self.allUsers) {
+        if ([user.userName compare:userName]==0 && [user.password compare:password]==0) return user;
+    }
+    return nil;
 }
 
 

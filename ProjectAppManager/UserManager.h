@@ -12,10 +12,13 @@
 @interface UserManager : NSObject
 
 
-+(UserManager *)instance;
++(UserManager *)sharedInstance;
 
 @property User * currentUser;
 @property User * userSelected;
 
 @property NSMutableArray * allUsers;
+-(User *)getUserByID:(NSInteger)userID;
+-(User *)userLogin:(NSString*)userName password:(NSString*)password;
+
 @end

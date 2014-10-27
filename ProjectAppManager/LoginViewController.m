@@ -7,6 +7,10 @@
 //
 
 #import "LoginViewController.h"
+#import "UserManager.h"
+#import "ReminderViewController.h"
+#import "ServerManager.h"
+#import <CoreData/CoreData.h>
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameText;
@@ -37,6 +41,18 @@
 */
 
 - (IBAction)loginBtnOnclick:(id)sender {
+    [UserManager sharedInstance].currentUser = [[UserManager sharedInstance] userLogin:self.userNameText.text password:self.passwordText.text];
+    if ([UserManager sharedInstance].currentUser!=nil) {
+        NSLog(@"yes");
+        ReminderViewController * reminderViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"reminderView"];
+        [self.navigationController pushViewController:reminderViewController animated:YES];
+        NSMutableArray * receivedMessages = [[ServerManager sharedInstance] getMessagesByUserID:[UserManager sharedInstance].currentUser.userID];
+        ((Message*)[receivedMessages objectAtIndex:0]);
+        NSLog(@"%ld",[receivedMessages count]);
+        
+    }else{
+        NSLog(@"no");
+    }
 }
 
 
