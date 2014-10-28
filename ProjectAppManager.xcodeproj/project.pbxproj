@@ -33,6 +33,7 @@
 		FB527F0419F5CB86005FD68E /* ProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB527F0319F5CB86005FD68E /* ProjectListViewController.m */; };
 		FB527F0719F5CC1F005FD68E /* MemberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB527F0619F5CC1F005FD68E /* MemberListViewController.m */; };
 		FB527F0A19F5CE3A005FD68E /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB527F0919F5CE3A005FD68E /* MemberViewController.m */; };
+		FBD158E619FEEED20004BA90 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD158E519FEEED20004BA90 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		FB527F0619F5CC1F005FD68E /* MemberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListViewController.m; sourceTree = "<group>"; };
 		FB527F0819F5CE3A005FD68E /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
 		FB527F0919F5CE3A005FD68E /* MemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
+		FBD158E519FEEED20004BA90 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD158E619FEEED20004BA90 /* EventKit.framework in Frameworks */,
 				0D2920C919FEC47400D104EF /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +160,7 @@
 		FB18EB9419F1BD5700C403D0 = {
 			isa = PBXGroup;
 			children = (
+				FBD158E519FEEED20004BA90 /* EventKit.framework */,
 				0D2920C819FEC47400D104EF /* CoreData.framework */,
 				FB18EB9F19F1BD5700C403D0 /* ProjectAppManager */,
 				FB18EBB919F1BD5700C403D0 /* ProjectAppManagerTests */,

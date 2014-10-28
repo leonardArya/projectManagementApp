@@ -47,7 +47,10 @@
         ReminderViewController * reminderViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"reminderView"];
         [self.navigationController pushViewController:reminderViewController animated:YES];
         NSMutableArray * receivedMessages = [[ServerManager sharedInstance] getMessagesByUserID:[UserManager sharedInstance].currentUser.userID];
-        ((Message*)[receivedMessages objectAtIndex:0]);
+        
+        
+        
+        
         NSLog(@"%ld",[receivedMessages count]);
         
     }else{
