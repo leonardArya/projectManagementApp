@@ -15,8 +15,8 @@
         <attribute name="projectID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Project" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="Member" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Project" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="ProjectMemberRelationship" positionX="-36" positionY="9" width="128" height="75"/>
     </elements>
 </model>

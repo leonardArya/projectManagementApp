@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface CoreDataManager : NSObject
-
+-(void)initCoreData;
++(CoreDataManager*)sharedInstance;
+-(NSMutableArray *)readEntity:(NSString *)entity;
+-(NSMutableArray *)readEntity:(NSString *)entity withPredicate:(NSString *)predicationString;
 @end

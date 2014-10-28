@@ -10,4 +10,6 @@
 
 @interface MemberManager : NSObject
 
++(MemberManager*)sharedInstance;
+-(NSMutableArray *)getMemberByProjectID:(NSNumber*)projectID;
 @end

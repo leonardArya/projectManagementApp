@@ -19,7 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self initTestData];
     return YES;
 }
 
@@ -46,19 +45,7 @@
 }
 
 -(void)initTestData{
-    User * user1,*user2;
-    user1 = [User alloc];
-    user1.userID = 0;
-    user1.userName = @"user1";
-    user1.password = @"pw";
-    user2 = [User alloc];
-    user2.userID = 1;
-    user2.userName = @"user2";
-    user2.password = @"pw";
-    
-    [[UserManager sharedInstance].allUsers addObject:user1];
-    [[UserManager sharedInstance].allUsers addObject:user2];
-    [UserManager sharedInstance].userSelected = user2;
+
 }
 
 #pragma mark - Core Data stack

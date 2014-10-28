@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MemberListViewController : UIViewController
-
+@interface MemberListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property NSMutableArray * members;
 @end

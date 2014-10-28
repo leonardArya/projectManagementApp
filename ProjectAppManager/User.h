@@ -16,7 +16,7 @@
 @property NSString * userName;
 @property NSString * password;
 
-@property ProjectManager * projects;
-@property MessageManager * messages;
+@property NSMutableArray * projects;
+@property NSMutableArray * messages;
 
 @end

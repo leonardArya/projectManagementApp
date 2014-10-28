@@ -7,6 +7,10 @@
 //
 
 #import "ProjectListViewController.h"
+#import "CoreDataManager.h"
+#import "ProjectManager.h"
+#import "UserManager.h"
+#import "MemberListViewController.h"
 
 @interface ProjectListViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *projectListTableView;
@@ -17,12 +21,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.projects = [[ProjectManager sharedInstance] getProjectsByUserID:[UserManager sharedInstance].currentUser.userID];
+    [self.projectListTableView setSeparatorColor:[UIColor lightGrayColor]];
+    [UserManager sharedInstance].currentUser.projects = self.projects;
+    self.navigationItem.title = @"Participating Projects";
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    cell.textLabel.text=[[self.projects objectAtIndex:indexPath.row]valueForKey:@"name_PK"];
+    return cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.projects count];
+}
+
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [ProjectManager sharedInstance].selectedProjectID = [[self.projects objectAtIndex:indexPath.row] valueForKey:@"id"];
+    [ProjectManager sharedInstance].selectedProjectDetail = [[self.projects objectAtIndex:indexPath.row] valueForKey:@"detail"];
+    MemberListViewController * viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"memberList"];
+    [self.navigationController pushViewController:viewController animated:YES];
+    return indexPath;
 }
 
 /*

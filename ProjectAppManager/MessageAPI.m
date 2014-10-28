@@ -15,7 +15,7 @@
 @implementation MessageAPI
 
 +(void)sendMessageToServer:(Message *)message{
-    message.userID = [UserManager sharedInstance].userSelected.userID;
+    message.userID = [[UserManager sharedInstance].userSelectedID integerValue];
     [[ServerManager sharedInstance].messages addObject:message];
     
 //    NSLog(@"total message in server:%lu",[ServerManager.instance.messages count]);
