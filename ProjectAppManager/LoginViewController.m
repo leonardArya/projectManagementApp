@@ -50,12 +50,7 @@
         ProjectListViewController * projectListViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"projectList"];
         [self.navigationController pushViewController:projectListViewController animated:YES];
         NSMutableArray * receivedMessages = [[ServerManager sharedInstance] getMessagesByUserID:[UserManager sharedInstance].currentUser.userID];
-        
-        
-        
-        
-        NSLog(@"%ld",[receivedMessages count]);
-        
+        NSLog(@"you got%ld messages",[receivedMessages count]);
     }else{
         NSLog(@"no");
     }
