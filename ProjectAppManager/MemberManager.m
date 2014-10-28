@@ -30,4 +30,5 @@ static MemberManager * instance;
     }
     return result;
 }
+
 @end

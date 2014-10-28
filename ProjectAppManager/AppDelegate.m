@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //[self initDataBase];
     return YES;
 }
 
@@ -45,7 +46,7 @@
 }
 
 -(void)initTestData{
-
+    
 }
 
 #pragma mark - Core Data stack
@@ -125,6 +126,135 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
+    }
+}
+
+#pragma init DataBase
+-(void)initDataBase{
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    // Create a new managed object
+    
+    //Project
+    //one recored
+    NSManagedObject *newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"id"];
+    [newRecord setValue:@"Project1" forKey:@"name"];
+    [newRecord setValue:@"this is a project" forKey:@"detail"];
+    NSError *error = nil;
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"id"];
+    [newRecord setValue:@"Project2" forKey:@"name"];
+    [newRecord setValue:@"this is a project" forKey:@"detail"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:3] forKey:@"id"];
+    [newRecord setValue:@"Project3" forKey:@"name"];
+    [newRecord setValue:@"this is a project" forKey:@"detail"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //Member
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"Member" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"id"];
+    [newRecord setValue:@"jack" forKey:@"name"];
+    [newRecord setValue:@"pw" forKey:@"password"];
+    [newRecord setValue:@"jack123@gmail.com" forKey:@"email"];
+    [newRecord setValue:@"5101231234" forKey:@"phone"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"Member" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"id"];
+    [newRecord setValue:@"tom" forKey:@"name"];
+    [newRecord setValue:@"pw" forKey:@"password"];
+    [newRecord setValue:@"tom.personal@gmail.com" forKey:@"email"];
+    [newRecord setValue:@"51012345212" forKey:@"phone"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"Member" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:3] forKey:@"id"];
+    [newRecord setValue:@"mike" forKey:@"name"];
+    [newRecord setValue:@"pw" forKey:@"password"];
+    [newRecord setValue:@"mikelin@gmail.com" forKey:@"email"];
+    [newRecord setValue:@"5101235462" forKey:@"phone"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    
+    //Relationship
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"ProjectMemberRelationship" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"memberID"];
+    [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"projectID"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"ProjectMemberRelationship" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"memberID"];
+    [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"projectID"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"ProjectMemberRelationship" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"memberID"];
+    [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"projectID"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"ProjectMemberRelationship" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"memberID"];
+    [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"projectID"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"ProjectMemberRelationship" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:3] forKey:@"memberID"];
+    [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"projectID"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"ProjectMemberRelationship" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:3] forKey:@"memberID"];
+    [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"projectID"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    //one recored
+    newRecord = [NSEntityDescription insertNewObjectForEntityForName:@"ProjectMemberRelationship" inManagedObjectContext:context];
+    [newRecord setValue:[NSNumber numberWithInt:3] forKey:@"memberID"];
+    [newRecord setValue:[NSNumber numberWithInt:3] forKey:@"projectID"];
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
     }
 }
 

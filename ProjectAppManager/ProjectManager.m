@@ -21,9 +21,9 @@ static ProjectManager * instance;
     return instance;
 }
 
--(NSMutableArray *)getProjectsByUserID:(NSInteger)userID{
-    NSLog(@"userID = %ld",userID);
-    NSMutableArray * projectIDs = [[CoreDataManager sharedInstance] readEntity:@"ProjectMemberRelationship" withPredicate:[NSString stringWithFormat:@"memberID == %ld",userID]];
+-(NSMutableArray *)getProjectsByUserID:(NSNumber *)userID{
+    NSLog(@"userID = %@",userID);
+    NSMutableArray * projectIDs = [[CoreDataManager sharedInstance] readEntity:@"ProjectMemberRelationship" withPredicate:[NSString stringWithFormat:@"memberID == %@",userID]];
     NSLog(@"got %ld projects",[projectIDs count]);
     NSMutableArray * result = [[NSMutableArray alloc]init];
     for (id projectID in projectIDs) {

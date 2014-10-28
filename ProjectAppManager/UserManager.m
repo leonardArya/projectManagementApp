@@ -30,7 +30,7 @@ static UserManager * instance;
 }
 
 
--(User *)getUserByID:(NSInteger)userID{
+-(User *)getUserByID:(NSNumber*)userID{
     for (User * user in self.allUsers) {
         if (user.userID == userID) return user;
     }
@@ -42,8 +42,8 @@ static UserManager * instance;
     for (id user in userData) {
         if([userName compare:[user valueForKey:@"name"]]==0 && [password compare: [user valueForKey:@"password"]]==0){
             User * result = [[User alloc]init];
-            result.userID = [(NSNumber*)[user valueForKey:@"id"] integerValue];
-            NSLog(@"user ID =%ld",result.userID);
+            result.userID = [user valueForKey:@"id"];
+            NSLog(@"user ID =%@",result.userID);
             result.userName = [user valueForKey:@"name"];
             return result;
         }

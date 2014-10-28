@@ -13,6 +13,7 @@
 #import <CoreData/CoreData.h>
 #import "ProjectListViewController.h"
 #import "CoreDataManager.h"
+#import "MessageAPI.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameText;
@@ -47,10 +48,15 @@
     [UserManager sharedInstance].currentUser = [[UserManager sharedInstance] userLogin:self.userNameText.text password:self.passwordText.text];
     if ([UserManager sharedInstance].currentUser!=nil) {
         NSLog(@"correct");
-        ProjectListViewController * projectListViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"projectList"];
-        [self.navigationController pushViewController:projectListViewController animated:YES];
+        
         NSMutableArray * receivedMessages = [[ServerManager sharedInstance] getMessagesByUserID:[UserManager sharedInstance].currentUser.userID];
         NSLog(@"you got%ld messages",[receivedMessages count]);
+        for (Message * msg in receivedMessages) {
+            [MessageAPI handelMessage:msg];
+        }
+        //next VC
+        ProjectListViewController * projectListViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"projectList"];
+        [self.navigationController pushViewController:projectListViewController animated:YES];
     }else{
         NSLog(@"no");
     }

@@ -13,6 +13,6 @@
 +(ServerManager *)sharedInstance;
 
 @property NSMutableArray * messages;
--(NSMutableArray *)getMessagesByUserID:(NSInteger)userID;
+-(NSMutableArray *)getMessagesByUserID:(NSNumber*)userID;
 
 @end

@@ -10,4 +10,7 @@
 
 @interface Member : NSObject
 
+@property NSString * name;
+@property NSString * number;
+
 @end

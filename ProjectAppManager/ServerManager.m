@@ -22,7 +22,7 @@ static ServerManager * theInstance;
 }
 
 
--(NSMutableArray *)getMessagesByUserID:(NSInteger)userID{
+-(NSMutableArray *)getMessagesByUserID:(NSNumber *)userID{
     NSMutableArray * messages = [[NSMutableArray alloc]init];
     NSMutableArray * remain   = [[NSMutableArray alloc]init];
     for (Message * message in self.messages) {

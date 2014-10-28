@@ -12,7 +12,7 @@
 
 @interface User : NSObject
 
-@property NSInteger userID;
+@property NSNumber * userID;
 @property NSString * userName;
 @property NSString * password;
 

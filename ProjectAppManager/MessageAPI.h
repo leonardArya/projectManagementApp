@@ -10,8 +10,8 @@
 #import "Message.h"
 
 @interface MessageAPI : NSObject
-
 +(void)sendMessageToServer:(Message *)message;
 +(NSMutableArray*)getMessageFromServer;
++(void)handelMessage:(Message *)message;
 
 @end

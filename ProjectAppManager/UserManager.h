@@ -18,7 +18,7 @@
 @property NSNumber * userSelectedID;
 
 @property NSMutableArray * allUsers;
--(User *)getUserByID:(NSInteger)userID;
+-(User *)getUserByID:(NSNumber*)userID;
 -(User *)userLogin:(NSString*)userName password:(NSString*)password;
 
 @end

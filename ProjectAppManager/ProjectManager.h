@@ -10,7 +10,7 @@
 
 @interface ProjectManager : NSObject
 +(ProjectManager*)sharedInstance;
--(NSMutableArray *)getProjectsByUserID:(NSInteger)userID;
+-(NSMutableArray *)getProjectsByUserID:(NSNumber *)userID;
 @property NSNumber * selectedProjectID;
 @property NSString * selectedProjectDetail;
 
