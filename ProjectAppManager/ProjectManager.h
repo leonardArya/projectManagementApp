@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface ProjectManager : NSObject
++(ProjectManager*)sharedInstance;
+-(NSMutableArray *)getProjectsByUserID:(NSInteger)userID;
+@property NSNumber * selectedProjectID;
+@property NSString * selectedProjectDetail;
 
 @end

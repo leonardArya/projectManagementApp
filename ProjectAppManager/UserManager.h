@@ -15,7 +15,7 @@
 +(UserManager *)sharedInstance;
 
 @property User * currentUser;
-@property User * userSelected;
+@property NSNumber * userSelectedID;
 
 @property NSMutableArray * allUsers;
 -(User *)getUserByID:(NSInteger)userID;

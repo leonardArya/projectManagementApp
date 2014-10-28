@@ -12,6 +12,15 @@
 
 @implementation CoreDataManager
 
+static CoreDataManager * instance;
+
++(CoreDataManager *)sharedInstance{
+    if (instance ==nil) {
+        instance = [[CoreDataManager alloc]init];
+    }
+    return instance;
+}
+
 //core data
 - (NSManagedObjectContext *)managedObjectContext {
     NSManagedObjectContext *context = nil;
@@ -22,7 +31,7 @@
     return context;
 }
 
-- (IBAction)save:(id)sender {
+-(void)initCoreData {
     NSManagedObjectContext *context = [self managedObjectContext];
     NSNumber * memberid = [NSNumber numberWithInt:2];
     NSNumber * projectid = [NSNumber numberWithInt:2];
@@ -39,4 +48,19 @@
     
     //    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+-(NSMutableArray *)readEntity:(NSString *)entity {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest * request = [[NSFetchRequest alloc]initWithEntityName:entity];
+    return[[context executeFetchRequest:request error:nil]mutableCopy];
+}
+
+-(NSMutableArray *)readEntity:(NSString *)entity withPredicate:(NSString *)predicationString{
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest * request = [[NSFetchRequest alloc]initWithEntityName:entity];
+    NSPredicate * predication = [NSPredicate predicateWithFormat:predicationString];
+    [request setPredicate:predication];
+    return[[context executeFetchRequest:request error:nil]mutableCopy];
+}
+
 @end

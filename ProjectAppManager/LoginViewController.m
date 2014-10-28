@@ -11,6 +11,8 @@
 #import "ReminderViewController.h"
 #import "ServerManager.h"
 #import <CoreData/CoreData.h>
+#import "ProjectListViewController.h"
+#import "CoreDataManager.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameText;
@@ -22,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    [[CoreDataManager sharedInstance] initCoreData];
     // Do any additional setup after loading the view.
 }
 
@@ -43,9 +46,9 @@
 - (IBAction)loginBtnOnclick:(id)sender {
     [UserManager sharedInstance].currentUser = [[UserManager sharedInstance] userLogin:self.userNameText.text password:self.passwordText.text];
     if ([UserManager sharedInstance].currentUser!=nil) {
-        NSLog(@"yes");
-        ReminderViewController * reminderViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"reminderView"];
-        [self.navigationController pushViewController:reminderViewController animated:YES];
+        NSLog(@"correct");
+        ProjectListViewController * projectListViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"projectList"];
+        [self.navigationController pushViewController:projectListViewController animated:YES];
         NSMutableArray * receivedMessages = [[ServerManager sharedInstance] getMessagesByUserID:[UserManager sharedInstance].currentUser.userID];
         
         
@@ -57,7 +60,6 @@
         NSLog(@"no");
     }
 }
-
 
 - (IBAction)refreshBtnOnclick:(id)sender {
 }
