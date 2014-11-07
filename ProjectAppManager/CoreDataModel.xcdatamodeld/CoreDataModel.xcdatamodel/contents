@@ -10,6 +10,7 @@
     <entity name="Project" syncable="YES">
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="log" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="ProjectMemberRelationship" syncable="YES">
@@ -18,7 +19,7 @@
     </entity>
     <elements>
         <element name="Member" positionX="-54" positionY="-9" width="128" height="118"/>
-        <element name="Project" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Project" positionX="-63" positionY="-18" width="128" height="30"/>
         <element name="ProjectMemberRelationship" positionX="-36" positionY="9" width="128" height="75"/>
     </elements>
 </model>

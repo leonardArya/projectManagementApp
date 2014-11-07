@@ -1,5 +1,5 @@
 //
-//  ProjectModel.h
+//  ProjectManager.h
 //  ProjectAppManager
 //
 //  Created by Leonard Li on 10/17/14.
@@ -13,5 +13,6 @@
 -(NSMutableArray *)getProjectsByUserID:(NSNumber *)userID;
 @property NSNumber * selectedProjectID;
 @property NSString * selectedProjectDetail;
+@property NSString * selectedProjectLog;
 
 @end

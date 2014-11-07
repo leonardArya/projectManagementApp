@@ -13,4 +13,5 @@
 +(CoreDataManager*)sharedInstance;
 -(NSMutableArray *)readEntity:(NSString *)entity;
 -(NSMutableArray *)readEntity:(NSString *)entity withPredicate:(NSString *)predicationString;
+-(void)writePorjectLog:(NSNumber *)projectID userID:(NSNumber *)userID memberID:(NSNumber* )memberID infoStr:(NSString *)infoStr;
 @end

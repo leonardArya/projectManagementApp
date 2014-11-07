@@ -25,7 +25,7 @@ static MemberManager * instance;
     NSLog(@"find %ld members",[memberIDs count]);
     NSMutableArray * result = [[NSMutableArray alloc]init];
     for (id memberID in memberIDs) {
-        NSLog(@"projectID = %@",[memberID valueForKey:@"memberID"]);
+        NSLog(@"memberID = %@",[memberID valueForKey:@"memberID"]);
         [result addObjectsFromArray:[[CoreDataManager sharedInstance] readEntity:@"Member" withPredicate:[NSString stringWithFormat:@"id == %@",[memberID valueForKey:@"memberID"]]]];
     }
     return result;

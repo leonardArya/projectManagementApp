@@ -28,6 +28,11 @@
     // Do any additional setup after loading the view.
 }
 
+-(void) viewWillAppear:(BOOL)inAnimated {
+    NSIndexPath *selected = [self.projectListTableView indexPathForSelectedRow];
+    if ( selected ) [self.projectListTableView deselectRowAtIndexPath:selected animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -35,7 +40,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    cell.textLabel.text=[[self.projects objectAtIndex:indexPath.row]valueForKey:@"name_PK"];
+    cell.textLabel.text=[[self.projects objectAtIndex:indexPath.row]valueForKey:@"name"];
     return cell;
 }
 
@@ -43,12 +48,10 @@
     return [self.projects count];
 }
 
--(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [ProjectManager sharedInstance].selectedProjectID = [[self.projects objectAtIndex:indexPath.row] valueForKey:@"id"];
-    [ProjectManager sharedInstance].selectedProjectDetail = [[self.projects objectAtIndex:indexPath.row] valueForKey:@"detail"];
     MemberListViewController * viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"memberList"];
     [self.navigationController pushViewController:viewController animated:YES];
-    return indexPath;
 }
 
 /*

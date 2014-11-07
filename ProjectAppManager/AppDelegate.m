@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //[self initDataBase];
+    [self initDataBase];
     return YES;
 }
 
@@ -141,6 +141,7 @@
     [newRecord setValue:[NSNumber numberWithInt:1] forKey:@"id"];
     [newRecord setValue:@"Project1" forKey:@"name"];
     [newRecord setValue:@"this is a project" forKey:@"detail"];
+    [newRecord setValue:@"this is a log" forKey:@"log"];
     NSError *error = nil;
     // Save the object to persistent store
     if (![context save:&error]) {
@@ -151,6 +152,7 @@
     [newRecord setValue:[NSNumber numberWithInt:2] forKey:@"id"];
     [newRecord setValue:@"Project2" forKey:@"name"];
     [newRecord setValue:@"this is a project" forKey:@"detail"];
+    [newRecord setValue:@"this is a log" forKey:@"log"];
     // Save the object to persistent store
     if (![context save:&error]) {
         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
@@ -160,6 +162,7 @@
     [newRecord setValue:[NSNumber numberWithInt:3] forKey:@"id"];
     [newRecord setValue:@"Project3" forKey:@"name"];
     [newRecord setValue:@"this is a project" forKey:@"detail"];
+    [newRecord setValue:@"this is a log" forKey:@"log"];
     // Save the object to persistent store
     if (![context save:&error]) {
         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);

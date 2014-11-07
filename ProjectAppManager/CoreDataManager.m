@@ -63,4 +63,40 @@ static CoreDataManager * instance;
     return[[context executeFetchRequest:request error:nil]mutableCopy];
 }
 
+-(void)writePorjectLog:(NSNumber *)projectID userID:(NSNumber *)userID memberID:(NSNumber* )memberID infoStr:(NSString *)infoStr{
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest * request;
+    NSPredicate * predication;
+    NSMutableArray* result;
+    //get user name and member name
+    NSString * userName;
+    NSString * memberName;
+    NSString * log;
+    
+    request = [[NSFetchRequest alloc]initWithEntityName:@"Member"];
+    predication = [NSPredicate predicateWithFormat:@"id == %@",userID];
+    [request setPredicate:predication];
+    result= [[context executeFetchRequest:request error:nil]mutableCopy];
+    userName =[[result objectAtIndex:0] valueForKey:@"name"];
+    
+    request = [[NSFetchRequest alloc]initWithEntityName:@"Member"];
+    predication = [NSPredicate predicateWithFormat:@"id == %@",memberID];
+    [request setPredicate:predication];
+    result= [[context executeFetchRequest:request error:nil]mutableCopy];
+    memberName =[[result objectAtIndex:0] valueForKey:@"name"];
+    //end of names
+    
+    request = [[NSFetchRequest alloc]initWithEntityName:@"Project"];
+    predication = [NSPredicate predicateWithFormat:@"id == %@",projectID];
+    [request setPredicate:predication];
+    result = [[context executeFetchRequest:request error:nil]mutableCopy];
+    log = [[NSString stringWithFormat:@"%@ made phone call to %@ \n",userName,memberName] stringByAppendingString:[[result objectAtIndex:0] valueForKey:@"log"]];
+    [[result objectAtIndex:0] setValue:log forKey:@"log"];
+    NSError *error = nil;
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+}
+
 @end
