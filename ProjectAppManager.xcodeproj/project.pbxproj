@@ -19,6 +19,7 @@
 		0D5C43EA19F1C1470047283C /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43E919F1C1470047283C /* UserManager.m */; };
 		0D5C43ED19F1C4DA0047283C /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EC19F1C4DA0047283C /* ServerManager.m */; };
 		0D5C43F019F1D7CE0047283C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C43EF19F1D7CE0047283C /* User.m */; };
+		0D7268D11A11510500A83B60 /* DropboxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7268D01A11510500A83B60 /* DropboxManager.m */; };
 		0D7BFA4619F5BD750080860F /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFA4519F5BD750080860F /* ReminderViewController.m */; };
 		0DA0E5C219F713090058EDC1 /* UserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0E5C119F713090058EDC1 /* UserAPI.m */; };
 		0DFD2C8419F5917B0009BA2E /* MessageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD2C8319F5917B0009BA2E /* MessageAPI.m */; };
@@ -69,6 +70,8 @@
 		0D5C43EC19F1C4DA0047283C /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
 		0D5C43EE19F1D7CE0047283C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0D5C43EF19F1D7CE0047283C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0D7268CF1A11510500A83B60 /* DropboxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxManager.h; sourceTree = "<group>"; };
+		0D7268D01A11510500A83B60 /* DropboxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxManager.m; sourceTree = "<group>"; };
 		0D7BFA4419F5BD750080860F /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
 		0D7BFA4519F5BD750080860F /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
 		0DA0E5C019F713090058EDC1 /* UserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAPI.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				0D5C43EB19F1C4DA0047283C /* ServerManager.h */,
 				0D5C43EC19F1C4DA0047283C /* ServerManager.m */,
 				0D5C43E219F1C06A0047283C /* Member.h */,
+				0D7268CF1A11510500A83B60 /* DropboxManager.h */,
+				0D7268D01A11510500A83B60 /* DropboxManager.m */,
 				0D5C43E319F1C06A0047283C /* Member.m */,
 				0D5C43EE19F1D7CE0047283C /* User.h */,
 				0D5C43EF19F1D7CE0047283C /* User.m */,
@@ -345,6 +350,7 @@
 				FB527F0419F5CB86005FD68E /* ProjectListViewController.m in Sources */,
 				0D5C43DB19F1BF8A0047283C /* MemberManager.m in Sources */,
 				0D5C43EA19F1C1470047283C /* UserManager.m in Sources */,
+				0D7268D11A11510500A83B60 /* DropboxManager.m in Sources */,
 				0D5C43F019F1D7CE0047283C /* User.m in Sources */,
 				0D29210419FECCE100D104EF /* CoreDataManager.m in Sources */,
 				0D5C43E119F1C0580047283C /* Project.m in Sources */,
